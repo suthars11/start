@@ -1,0 +1,175 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* anvbar */
+
+/* @layer utilities {
+  .backdrop-blur-custom {
+    backdrop-filter: blur(100px);
+  }
+} */
+
+.custom-blur {
+  /* background: rgba(0, 0, 0, 0.5); */
+  backdrop-filter: blur(1px); /* Apply blur effect */
+  /* background-color: rgba(0, 255, 255, 0.2); */
+  background-color: rgba(255, 255, 255, 0.4)
+  /* -webkit-backdrop-filter: blur(10px);  */
+ 
+}
+.custom-blur:hover {
+  background-color: rgba(255, 255, 255, 0.6); /* Change background on hover */
+  backdrop-filter: blur(1px); /* Increase blur on hover */
+}
+
+.gradient-background {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(54, 54, 54, 0.02));
+  backdrop-filter: blur(35px);
+ 
+}
+
+/* navbar css */
+@layer utilities {
+  .bg-custom-gradient {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(54, 54, 54, 0.02));
+    opacity: 1;
+  }
+}
+@layer utilities {
+  .text-custom-purple {
+    color: rgba(78, 15, 158, 1);
+  }
+}
+
+@layer utilities {
+  .bg-custom-purple {
+    background-color: rgba(78, 15, 158, 1);
+  }
+}
+@layer components {
+  .footer_heading {
+    @apply text-lg text-[rgba(22,96,136,1)] font-bold underline mb-4;
+  }
+  .footer_link {
+    @apply text-base text-[rgba(22,96,136,1)] hover:underline cursor-pointer text-opacity-60 mb-3 w-fit;
+  }
+}
+
+/* .clip-banner {
+  clip-path: polygon(
+    0% 0%,
+    85% 10%,
+    100% 100%,
+    0% 100%
+  ); 
+
+  border-top-right-radius: 700px;
+
+  overflow: hidden; 
+} */
+
+
+.clip-banner {
+  clip-path: polygon(
+    0% 10%,
+    75% 10%,
+    85% 20%
+    100% 100%,
+    0% 100%
+  ); 
+
+  border-top-right-radius: 900px;
+  width: 485px;
+
+  overflow: hidden; 
+}
+.clip-banners {
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    95% 100%,
+    0% 100%
+  ); /* Clip path adjusted for the bottom-right corner */
+
+  border-bottom-right-radius: 700px; /* Apply border radius to the bottom-right */
+  
+  box-shadow: none; /* Remove shadow */
+  /* overflow: hidden;  */
+}
+
+.custom-gradient {
+  background: linear-gradient(
+    to right,
+    rgba(136, 82, 206, 0.8),
+    rgba(166, 135, 206, 0.8),
+    rgba(199, 107, 188, 0.8),
+    rgba(245, 174, 237, 0.8)
+  );
+}
+
+/* seller */
+
+@layer utilities {
+  .custom-class {
+    /* background-color: rgba(225, 206, 250, 1); */
+    /* background-color: rgba(78, 15, 158, 1); */
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 8px;
+  }
+}
+@layer utilities {
+  .my-custom-class {
+    background-color: rgba(225, 206, 250, 1);
+    font-size: 10px;
+    font-weight: 500;
+    border-radius: 8px;
+  }
+}
+
+
+
+/* handicaped */
+.gradient {
+  background: linear-gradient(
+    to right, 
+    rgba(255, 194, 247, 0.3), 
+    rgba(255, 94, 233, 0.3), 
+    rgba(205, 156, 199, 0.3), 
+    rgba(255, 211, 250, 0.3)
+  );
+}
+
+.linear-gradient-class {
+  background: linear-gradient(
+    to right, /* Direction of the gradient */
+    rgba(255, 94, 233, 0.3), 
+    rgba(255, 194, 247, 0.3), 
+    /* rgba(74, 74, 74, 0.3),  */
+    rgba(255, 255, 255, 1) /* Ending color */
+  );
+}
+ /* Custom styles for Swiper navigation buttons */
+
+/* Custom styles for Swiper navigation buttons */
+.swiper-button-next,
+.swiper-button-prev {
+  font-size: 18px; /* Adjust the size */
+  color: #4E0F9E;  /* Adjust the color */
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #FFFFFF; /* Color when hovered */
+}
+
+
+
+
